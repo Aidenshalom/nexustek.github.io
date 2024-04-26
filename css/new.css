@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200&display=swap');
+
+:root
+{
+    --primary-colour : #A020F0;
+    --secondary-colour : #99C845;
+    --text-color : #4d4d4d;
+    --text-color2 : #fff; 
+    --background-color : #fff;
+    --border-top : rgba(0,0,0,0.1);
+    --box-shadow : rgba(0,0,0,0.6);
+    --primary-colour2 : hsla(277, 87%, 53%, 0.8);
+    --secondary-colour2 : hsla(82, 54%, 53%, 0.8);
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body
+{
+    font-family: 'Titillium Web', sans-serif;
+    line-height: 1.5;
+    color: var(--text-color);
+    background-color: var(--background-color)
+}
+
+a
+{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+#dashboard
+{
+    width: 100%;
+    background: linear-gradient(to left,#c4c4b9,rgb(189, 169, 189));
+    height: 100%;
+    background-attachment: fixed;
+    padding-bottom: 350px;
+}
+
+#dashboard .container
+{
+    padding-top: 90px;
+    color: var(--text-color);
+    padding-bottom: 100px;
+    max-width: 1150px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#dashboard .container h1
+{
+    font-size: 30px;
+    color: #5d0296;
+    padding: 20px auto;
+}
+
+#dashboard .container .content
+{
+    border-bottom: 1px solid var(--box-shadow);
+    margin: 50px auto;
+    padding-bottom: 20px;
+}
+
+#dashboard .container .content h2
+{
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+#dashboard .container .content .info
+{
+    margin-top: 20px;
+    /* display: none; */
+    text-align: left;
+}
+
+#dashboard .container .content .info .image
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+}
+
+#dashboard .container .content .info .image div
+{
+    margin: auto 50px;
+}
+
+#dashboard .container .content .info .image div img
+{
+    width: 250px;
+}
+
+#dashboard .container .content .info p
+{
+    font-size: 20px;
+    font-weight: 900;
+}
+
+#dashboard .container .content.active .arrow
+{
+    transform: rotate(90deg);
+}
+
+@media (max-width:1300px) {
+
+    #dashboard .container
+    {
+        margin-top: 0px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media (max-width:900px) {
+    #dashboard .container
+    {
+        display: ;
+    }
+
+    #dashboard .container .content .info .image
+    {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+}
+
+@media (max-width:400px) {
+
+    #dashboard .container
+    {
+        margin-top: 0px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #dashboard .container h1
+    {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    
+    #dashboard .container .content .info .image div img
+    {
+        width: 150px;
+    }
+
+    #dashboard .container .content h2
+    {
+        font-size: 16px;
+    }
+
+    #dashboard .container .content .info p
+    {
+        font-size: 13px;
+        font-weight: 900;
+    }
+}
+
