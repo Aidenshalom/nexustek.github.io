@@ -1492,8 +1492,6 @@ input[type="number"]
 
 #footer .copy
 {
-    justify-content: center;
-    flex-wrap: wrap;
     padding-top: 20px;
     margin-bottom: 20px;
 }
